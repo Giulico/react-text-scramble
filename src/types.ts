@@ -1,4 +1,4 @@
-export type ScrambleText = string
+export type ScrambleText = string[]
 
 export type ScrambleTexts = ScrambleText[]
 
@@ -9,4 +9,8 @@ export type TextScrambleProps = {
   nextLetterSpeed?: number
   paused?: boolean
   pauseTime?: number
+  dudClassName?: string
+  lineClassName?: string
+  lineDelay?: number
+  parallel?: boolean
 }

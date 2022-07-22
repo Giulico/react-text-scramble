@@ -1,20 +1,27 @@
 {
   "compilerOptions": {
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "checkJs": false,
     "declaration": true,
     "declarationDir": "./lib",
+    "esModuleInterop": false,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "lib": [ "DOM", "DOM.Iterable", "ESNext" ],
     "module": "ESNext",
-    "lib": [
-      // "DOM",
-      // "DOM.Iterable",
-      // "ESNext"
-    ],
-    "outDir": "./lib/",
-    "target": "es5",
     "moduleResolution": "node",
-    "jsx": "react",
+    "noEmit": true,
+    "noFallthroughCasesInSwitch": true,
+    "outDir": "./lib/",
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
     "strict": true,
-    "esModuleInterop": true
+    "target": "ESNext",
+    "typeRoots": ["./node_modules/@types"],
+    "useDefineForClassFields": true
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "./node_modules/**/*"],
   "exclude": ["node_modules", "lib"]
 }
